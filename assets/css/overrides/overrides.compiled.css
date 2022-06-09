@@ -1,0 +1,53 @@
+.noshadow {
+  box-shadow: none !important;
+}
+
+.nooutline {
+  outline: none !important;
+}
+
+table.floathead thead th {
+  position: sticky;
+  top: 0;
+  background: #0d6efd;
+  z-index: 100;
+}
+
+.card--table {
+  border-radius: 0;
+  border: none;
+}
+.card--table .list-group {
+  border-left: 1px solid #dee2e6 !important;
+  border-top: 1px solid #dee2e6 !important;
+  border-radius: 0 !important;
+}
+.card--table .list-group > .list-group-item {
+  padding: 0;
+  border: none;
+}
+.card--table .list-group > .list-group-item > .row > * {
+  padding: 0.5rem 0.5rem;
+  border-right: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+.card--table .list-group > .list-group-item > .row > *.th {
+  background: #f8f9fa;
+  font-weight: 700;
+  color: #495057;
+}
+.card--table .list-group > .list-group-item > .row > * textarea,
+.card--table .list-group > .list-group-item > .row > * input[type=text],
+.card--table .list-group > .list-group-item > .row > * input[type=number],
+.card--table .list-group > .list-group-item > .row > * input[type=email],
+.card--table .list-group > .list-group-item > .row > * input[type=date],
+.card--table .list-group > .list-group-item > .row > * input[type=datetime-local],
+.card--table .list-group > .list-group-item > .row > * input[type=password],
+.card--table .list-group > .list-group-item > .row > * input[type=file],
+.card--table .list-group > .list-group-item > .row > * select {
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
