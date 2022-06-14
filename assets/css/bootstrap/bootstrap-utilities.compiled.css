@@ -66,6 +66,20 @@
   color: #1a1e21;
 }
 
+.link-black {
+  color: #000;
+}
+.link-black:hover, .link-black:focus {
+  color: black;
+}
+
+.link-white {
+  color: #fff;
+}
+.link-white:hover, .link-white:focus {
+  color: white;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -486,6 +500,10 @@
 
 .border-dark {
   border-color: #212529 !important;
+}
+
+.border-black {
+  border-color: #000 !important;
 }
 
 .border-white {

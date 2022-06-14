@@ -1,0 +1,21 @@
+main .row--layout {
+  min-height: 100vh;
+}
+main .row--layout .col--content {
+  max-width: 100vw !important;
+  transition: max-width 0.5s;
+}
+main .row--layout .col--sidebar {
+  width: 0;
+  transition: width 0.5s;
+}
+main .row--layout .col--sidebar.active {
+  width: 320px;
+}
+main .row--layout .col--sidebar.active + .col--content {
+  max-width: calc(100vw - 320px) !important;
+}
+main .row--layout .col--sidebar > div {
+  width: 320px;
+  min-width: 320px;
+}
