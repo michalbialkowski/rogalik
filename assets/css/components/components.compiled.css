@@ -1,5 +1,7 @@
 main .row--layout {
   min-height: 100vh;
+  max-width: 100vw !important;
+  overflow: hidden;
 }
 main .row--layout .col--content {
   max-width: 100vw !important;
@@ -12,8 +14,10 @@ main .row--layout .col--sidebar {
 main .row--layout .col--sidebar.active {
   width: 320px;
 }
-main .row--layout .col--sidebar.active + .col--content {
-  max-width: calc(100vw - 320px) !important;
+@media (min-width: 576px) {
+  main .row--layout .col--sidebar.active + .col--content {
+    max-width: calc(100vw - 320px) !important;
+  }
 }
 main .row--layout .col--sidebar > div {
   width: 320px;
