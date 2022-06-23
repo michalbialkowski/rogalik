@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Rogalik</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=d41d8cd98f00b204e9800998ecf8427e">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-grid.compiled.css?h=44680e223d244bccb811cda84ad25b93">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-reboot.compiled.css?h=cb6b890c3b1c4af4982f823bc8bdb9c9">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-utilities.compiled.css?h=fe6a6a9b772dfa88deb80287b561b8bd">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.compiled.css?h=71cb54e6ab03e275b28de04f85352292">
+    <link rel="stylesheet" href="assets/css/page.compiled.css?h=7429a5afbc27ef3003ecf154e7a4d68a">
+    <link rel="stylesheet" href="assets/css/utilities/utilities.compiled.css?h=988eeb528c036076aacb41ed8f1834cd">
+    <link rel="stylesheet" href="assets/css/libs/libs.compiled.css?h=dda1d572cef268e6e6aba30c50241324">
+    <link rel="stylesheet" href="assets/css/overrides/overrides.compiled.css?h=5d2850a977f5b8ed2c60be1c6aa64cc7">
+    <link rel="stylesheet" href="assets/css/components/components.compiled.css?h=bbf527f44f9604f3df4873026bb17c71">
+</head>
+
+<body class="bg-light">
+    <div>
+        <main>
+            <div>
+                <div class="container-fluid p-0">
+                    <div class="row g-0 flex-nowrap row--layout">
+                        <div class="col-auto d-none d-sm-flex overflow-hidden col--sidebar active">
+                            <div class="bg-white w-100 p-4">
+                                <div class="mb-4">
+                                    <form>
+                                        <div class="input-group border-bottom"><button class="btn" type="button"><img src="assets/img/icons/icon-x-small.svg?h=b69f0b43fec3b928c8e762e262a1dc4a"></button><input class="form-control border-0" type="text" placeholder="Wyszukaj zamówienie"></div>
+                                    </form>
+                                </div>
+                                <div>
+                                    <div class="row gx-2 gy-2">
+                                        <div class="col-12"><a class="btn btn-primary btn-lg w-100 px-4 border" role="button" href="app-magazynier-zamowienie.html"><span class="d-flex justify-content-between align-items-center"><span class="d-flex align-items-center"><img class="me-3" src="assets/img/icons/icon-buildings.svg?h=48ed92f430a9782c0f72f2fd71e93d61" style="filter: invert(100%);"><span>Złóż zamówienie</span></span></span></a></div>
+                                        <div class="col-12"><a class="btn btn-light btn-lg w-100 px-4 border" role="button" href="app-magazynier-magazyn.html"><span class="d-flex justify-content-between align-items-center"><span class="d-flex align-items-center"><img class="me-3" src="assets/img/icons/icon-timeline.svg?h=b0f71dee35177fb6c81a95a96cfb31c2"><span>Stan magazynowy</span></span></span></a></div>
+                                        <div class="col-12"><button class="btn btn-light btn-lg w-100 px-4 border" type="button"><span class="d-flex justify-content-between align-items-center"><span class="d-flex align-items-center"><img class="me-3" src="assets/img/icons/icon-shipping.svg?h=62d2059060249a01a49523de01c09b3e"><span>Historia zamówień</span></span></span></button></div>
+                                        <div class="col-auto"><button class="btn btn-light btn-lg w-100 px-4 border" type="button"><img src="assets/img/icons/icon-settings.svg?h=3540370b0eabdf90109500fa54dc8c0a"></button></div>
+                                        <div class="col"><button class="btn btn-light btn-lg w-100 px-4 border" type="button"><span class="d-flex justify-content-center align-items-center"><span class="d-flex align-items-center"><img class="me-3" src="assets/img/icons/icon-logout.svg?h=a7b798d51c2b990324d9aa7c9e2f5443"><span>Wyloguj</span></span></span></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col--content">
+                            <div class="p-4">
+                                <div class="mb-4">
+                                    <div class="row justify-content-between align-items-center">
+                                        <div class="col">
+                                            <h3 class="mb-0">Poniedziałek, 3 czerwca</h3>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="btn-group d-flex align-items-center mx-n2" role="group"><button class="btn rounded-0 p-0 mx-2" type="button"><img src="assets/img/icons/icon-search.svg?h=b6f608badc4a3ac04e6f216e72c37f50"></button><button class="btn d-none d-sm-block rounded-0 p-0 mx-2" id="btn__fullscreen-1" type="button"><img src="assets/img/icons/icon-fullscreen-out.svg?h=b4bf65fae6029dc42f6b4875f2e27cef"></button><button class="btn d-block d-sm-none rounded-0 p-0 mx-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list">
+                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                                                    </svg></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="btn-group m-n1" role="group"><button class="btn btn-light m-1 border btn-white rounded" type="button">Chemia</button><button class="btn btn-dark m-1 rounded" type="button">Opakowania</button></div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="btn-group m-n1" role="group"><button class="btn btn-dark d-flex flex-column justify-content-end align-items-center m-1 rounded" type="button"><span class="d-block"><img src="assets/img/icons/icon-box-1.svg?h=b0918ea9050f09f55b758fd585bfd0ee"></span><small class="d-block mt-2">Karton 40x60x40</small></button><button class="btn btn-light d-flex flex-column justify-content-end align-items-center m-1 border btn-white rounded" type="button"><span class="d-block"><img src="assets/img/icons/icon-box-2.svg?h=1789b8e5fd1437be188928f78f11350d"></span><small class="d-block mt-2">Karton 60x60x8</small></button><button class="btn btn-light d-flex flex-column justify-content-end align-items-center m-1 border btn-white rounded" type="button"><span class="d-block"><img src="assets/img/icons/icon-box-3.svg?h=5a5f184d0ed3762d57d560cf90d8bf6f"></span><small class="d-block mt-2">Karton 45x95x20</small></button><button class="btn btn-light d-flex flex-column justify-content-end align-items-center m-1 border btn-white rounded" type="button"><span class="d-block"><img src="assets/img/icons/icon-box-4.svg?h=b5271384911d25330d93d560f9a0cc0d"></span><small class="d-block mt-2">Karton 6.5x25x30</small></button></div>
+                                </div>
+                                <div>
+                                    <form>
+                                        <div class="input-group"><span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-lg">
+                                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"></path>
+                                                </svg></span><span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-dash-lg">
+                                                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"></path>
+                                                </svg></span><input class="form-control" type="text"><button class="btn" type="button"><img src="assets/img/icons/icon-check-double.svg?h=03ecbfc8c9e43fae6130a67dbed1ed69"></button></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="assets/js/jquery.min.js?h=84e399b8f2181ccd73394fdeddff1638"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js?h=5488c86a1260428f0c13c0f8fb06bf6a"></script>
+    <script src="assets/js/utilities/svg.js?h=d9ea285243bbaa184c8b082f54b30ff4"></script>
+    <script src="assets/js/utilities/scroll.js?h=6b45ee3f322378dc3faf859cb456034a"></script>
+    <script src="assets/js/libs/jquery.fancybox.js?h=b63c7cca1b5e4bd57bd854c444b895c9"></script>
+    <script src="assets/js/libs/flickity.pkgd.min.js?h=8625a9d2a4f797e756dbd299c2d74fc2"></script>
+    <script src="assets/js/libs/masonry.pkgd.js?h=c39480835cf00844e6407f24d8aaba2e"></script>
+    <script src="assets/js/libs/triggers/flickity.js?h=606e2569aec986da9cad24c5f396cefa"></script>
+    <script src="assets/js/libs/triggers/masonry.js?h=eba9bf4e2d9c7c9794b7bf1e788e5932"></script>
+    <script src="assets/js/utilities/orphans.js?h=ec2a7d82581569569ab1ecb6f609dbd3"></script>
+    <script src="assets/js/components/layout.js?h=b65945a3e39c6229e08aae2cfc0a9349"></script>
+</body>
+
+</html>

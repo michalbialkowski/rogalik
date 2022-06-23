@@ -10,16 +10,24 @@ main .row--layout .col--content {
 main .row--layout .col--sidebar {
   width: 0;
   transition: width 0.5s;
+  overflow: hidden;
+}
+main .row--layout .col--sidebar > .card {
+  width: 320px;
+  min-width: 320px;
+  max-width: 320px;
+  height: 100%;
+  left: -320px;
+  transition: left 0.5s;
 }
 main .row--layout .col--sidebar.active {
   width: 320px;
+}
+main .row--layout .col--sidebar.active > .card {
+  left: 0;
 }
 @media (min-width: 576px) {
   main .row--layout .col--sidebar.active + .col--content {
     max-width: calc(100vw - 320px) !important;
   }
-}
-main .row--layout .col--sidebar > div {
-  width: 320px;
-  min-width: 320px;
 }
