@@ -18,26 +18,76 @@ table.table-card {
   border-collapse: separate;
   border-spacing: 0 15px;
 }
-table.table-card tbody tr th, table.table-card tbody tr td, table.table-card thead tr th, table.table-card thead tr td {
+table.table-card > tbody > tr > th,
+table.table-card > tbody > tr > td,
+table.table-card > thead > tr > th,
+table.table-card > thead > tr > td {
   background: white;
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
   padding: 10px 5px;
 }
-table.table-card tbody tr th:first-child, table.table-card tbody tr td:first-child, table.table-card thead tr th:first-child, table.table-card thead tr td:first-child {
+table.table-card > tbody > tr > th:first-child,
+table.table-card > tbody > tr > td:first-child,
+table.table-card > thead > tr > th:first-child,
+table.table-card > thead > tr > td:first-child {
   border-left: 1px solid #dee2e6;
   border-radius: 10px 0 0 10px;
   padding: 10px 5px 10px 25px;
 }
-table.table-card tbody tr th:last-child, table.table-card tbody tr td:last-child, table.table-card thead tr th:last-child, table.table-card thead tr td:last-child {
+table.table-card > tbody > tr > th:last-child,
+table.table-card > tbody > tr > td:last-child,
+table.table-card > thead > tr > th:last-child,
+table.table-card > thead > tr > td:last-child {
   border-right: 1px solid #dee2e6;
   border-radius: 0 10px 10px 0;
   padding: 10px 25px 10px 5px;
 }
-table.table-card tbody tr th button, table.table-card tbody tr td button, table.table-card thead tr th button, table.table-card thead tr td button {
+table.table-card > tbody > tr > th button,
+table.table-card > tbody > tr > td button,
+table.table-card > thead > tr > th button,
+table.table-card > thead > tr > td button {
   font-size: 13px;
 }
-table.table-card tbody tr.details > th, table.table-card tbody tr.details > td, table.table-card thead tr.details > th, table.table-card thead tr.details > td {
+table.table-card > tbody > tr > th table > thead > tr > th:first-child,
+table.table-card > tbody > tr > th table > thead > tr > td:first-child,
+table.table-card > tbody > tr > th table > tbody > tr > th:first-child,
+table.table-card > tbody > tr > th table > tbody > tr > td:first-child,
+table.table-card > tbody > tr > td table > thead > tr > th:first-child,
+table.table-card > tbody > tr > td table > thead > tr > td:first-child,
+table.table-card > tbody > tr > td table > tbody > tr > th:first-child,
+table.table-card > tbody > tr > td table > tbody > tr > td:first-child,
+table.table-card > thead > tr > th table > thead > tr > th:first-child,
+table.table-card > thead > tr > th table > thead > tr > td:first-child,
+table.table-card > thead > tr > th table > tbody > tr > th:first-child,
+table.table-card > thead > tr > th table > tbody > tr > td:first-child,
+table.table-card > thead > tr > td table > thead > tr > th:first-child,
+table.table-card > thead > tr > td table > thead > tr > td:first-child,
+table.table-card > thead > tr > td table > tbody > tr > th:first-child,
+table.table-card > thead > tr > td table > tbody > tr > td:first-child {
+  padding: 10px 5px 10px 25px;
+}
+table.table-card > tbody > tr > th table > thead > tr > th:last-child,
+table.table-card > tbody > tr > th table > thead > tr > td:last-child,
+table.table-card > tbody > tr > th table > tbody > tr > th:last-child,
+table.table-card > tbody > tr > th table > tbody > tr > td:last-child,
+table.table-card > tbody > tr > td table > thead > tr > th:last-child,
+table.table-card > tbody > tr > td table > thead > tr > td:last-child,
+table.table-card > tbody > tr > td table > tbody > tr > th:last-child,
+table.table-card > tbody > tr > td table > tbody > tr > td:last-child,
+table.table-card > thead > tr > th table > thead > tr > th:last-child,
+table.table-card > thead > tr > th table > thead > tr > td:last-child,
+table.table-card > thead > tr > th table > tbody > tr > th:last-child,
+table.table-card > thead > tr > th table > tbody > tr > td:last-child,
+table.table-card > thead > tr > td table > thead > tr > th:last-child,
+table.table-card > thead > tr > td table > thead > tr > td:last-child,
+table.table-card > thead > tr > td table > tbody > tr > th:last-child,
+table.table-card > thead > tr > td table > tbody > tr > td:last-child {
+  padding: 10px 25px 10px 5px;
+}
+table.table-card > tbody > tr.details > th, table.table-card > tbody > tr.details > td,
+table.table-card > thead > tr.details > th,
+table.table-card > thead > tr.details > td {
   padding: 0;
   border: none;
 }
